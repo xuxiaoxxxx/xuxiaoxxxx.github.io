@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>CronusVLA</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">CronusVLA: Towards Efficient and Robust <br>Manipulation via Multi-Frame Vision-Language-Action Modeling</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+                <span class="author-block">Hao Li<sup>1,2*</sup>,</span>
+                <span class="author-block">Shuai Yang<sup>2,3*</sup>,</span>
+                <span class="author-block">Yilun Chen<sup>2</sup>,</span>
+                <span class="author-block">Xinyi Chen<sup>2</sup>,</span>
+                <span class="author-block">Yang Tian<sup>2</sup>,</span>
+                <span class="author-block">Xiaoda Yang<sup>3</sup>,</span>
+                <span class="author-block">Hanqing Wang<sup>2</sup>,</span>
+                <span class="author-block">Tai Wang<sup>2</sup>,</span>
+                <span class="author-block">Dahua Lin<sup>4</sup>,</span>
+                <span class="author-block">Feng Zhao<sup>1</sup>,</span>
+                <span class="author-block">Jiangmiao Pang<sup>2</sup></span>
+
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>1</sup>University of Science and Technology of China, <sup>2</sup>Shanghai Artificial Intelligence Laboratory,<br> <sup>3</sup>Zhejiang University, <sup>4</sup>The Chinese University of Hong Kong</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution, Email: lihaohn@mail.ustc.edu.cn</small></span>
+                  </div>
+                  <div class="link-blocks-images" style="display:flex; justify-content:center; gap:2em; margin-top:1em;">
+                    <a href="https://github.com/InternRobotics/CronusVLA/">
+                      <div style="background-color:#000000;  border-radius:8px;">
+                        <img src="./static/images/cronusvla.png" alt="CronusVLA" style="height:52px;">
+                      </div>
+                    </a>
+                    <a href="https://github.com/LiHaoHN/SimX-OR">
+                      <img src="./static/images/simx-or.png" alt="SimX-OR" style="height:60px;">
+                    </a>
+                  </div>
+
+                  <div class="column has-text-centered">
+
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <!-- <span class="link-block">
+                        <a href="" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span> -->
+                    <span class="link-block">
+                      <a href="https://arxiv.org/abs/2506.19816" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="ai ai-arxiv"></i>
+                      </span>
+                      <span>Paper</span>
+                    </a>
+                  </span>
+                    <!-- Supplementary PDF link -->
+                    <!-- <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span> -->
+
+                  <!-- Github Link -->
+                <span class="link-block">
+                  <a href="https://github.com/InternRobotics/CronusVLA" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (CronusVLA)</span>
+                </a>
+              </span>
+
+              <span class="link-block">
+                <a href="https://github.com/LiHaoHN/SimX-OR" target="_blank"
+                class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+                <span>Benchmark (SimplerEnv-OR)</span>
+              </a>
+            </span>
+
+              <span class="link-block">
+                <a href="https://huggingface.co/collections/JeasLee/cronusvla" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon" style="vertical-align: middle; font-size: 20px;">🤗</span>
+                    <span style="vertical-align: middle;">Weights</span>
+                </a>
+             </span>
+                  <!-- Github link -->
+                  <!-- <span class="link-block">
+                    <a href="" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon" style="vertical-align: middle; font-size: 20px;">🤗</span>
+                    </span>
+                    <span>Weights (Coming Soon)</span>
+                  </a>
+                </span> -->
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser-->
+<!--
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        Your video here
+        <source src="static/videos/demo.mp4"
+        type="video/mp4">
+      </video>
+       <h2 class="subtitle has-text-centered">
+        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+      </h2> 
+    </div>
+  </div>
+</section> -->
+
+<div style="display: flex; justify-content: center;">
+  <video controls poster="static/images/post1.png" style="width: 80%; height: auto; max-width: 800px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+    <source src="https://github.com/user-attachments/assets/814fb943-a913-46fb-ada5-1efbbb4d3a20" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+<!-- End teaser -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Introduction</h2>
+        <div class="content has-text-justified">
+          <p>
+            💪 We propose CronusVLA, a unified framework that extends single-frame VLA models to the multi-frame paradigm. CronusVLA follows a two-stage process: (1) Single-frame pretraining on large-scale embodied datasets with autoregressive prediction of action tokens, establishing an effective embodied vision-language foundation; (2) Multi-frame post-training, which adapts the prediction of the vision-language backbone from discrete tokens to learnable features, and aggregates historical information via feature chunking. 
+            🔥 CronusVLA effectively addresses the existing challenges of multi-frame modeling while enhancing performance and observational robustness:
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered">
+        <img src="static/images/Nfig_1.png" width="50%" alt="Introduction of CronusVLA" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered">
+        <img src="static/images/fig_2.png" width="60%" alt="Method of CronusVLA" />
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+<section class="section hero is-light" id="Contribution">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Highlights</h2>
+        <div class="content has-text-justified">
+          <p>
+            <!-- To summarize, our contributions are as follows: -->
+          <ul>
+            <li> Efficient multi-frame(temporal) modeling and inference, available in both 7B and 0.5B versions.
+            <li> Leading performance on SimplerEnv, LIBERO, and real-world Franka experiments.
+            <li> High robustness on the SimplerEnv-OR benchmark and real-world robustness tests.  
+            <li> SimplerEnv-OR, a novel benchmark for quantitative evaluation of robustness under observational disturbances, featuring 24 types of observational disturbances and 120 severity levels.         </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered">
+        <img src="static/images/Nfig_2.png" width="70%" alt="Real World" />
+      </div>
+    </div>
+  </div>
+</section>
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered">
+        <img src="static/images/Nfig_4.png" width="40%" alt="Real World" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section hero is-light" id="Real_world">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Robostnuss (SimplerEnv-OR)</h2>
+        <div class="content has-text-justified">
+          <p>
+            SimplerEnv-OR (Observational Robustness) is designed to evaluate robustness of VLA models against observational disturbances across temporal (left) and spatial (right) dimensions:
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered">
+        <img src="static/images/NOR_1.png" width="60%" alt="Real World" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section hero is-light" id="Real_world">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div class="content has-text-justified">
+          <p>
+            We evaluate several methods on our SimplerEnv-OR, including pi-0(JAX), pi-0(Lerobot), TraceVLA, RoboVLMs, SpatialVLA, CogACT, CronusVLA:
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered">
+        <img src="static/images/NOR_2.png" width="60%" alt="Real World" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered">
+        <img src="static/images/NOR_5.png" width="60%" alt="Real World" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section hero is-light" id="Real_world">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div class="content has-text-justified">
+          <p>
+            We list several visualizations of spatial-dimension/temporal-dimension testing on SimplerEnv-OR. Qualitative comparisons under spatial/temporal disturbances, such as Cyclic Global Full Occlusion (left upper) and Cyclic Local Partial Occlusion (left bottom), Constant Global Jittering (right upper) and Sparse Discrete Impulse Noise (rigth bottom):
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container" style="display: flex; justify-content: center; align-items: center; gap: 2rem;">
+      <img src="static/images/NOR_3.png" width="40%" alt="Real World" />
+      <img src="static/images/NOR_4.png" width="40%" alt="Simulation" />
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered">
+        <img src="static/images/NOR_6.png" width="65%" alt="Real World" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section hero is-light" id="Real_world">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Real World</h2>
+        <div class="content has-text-justified">
+          <p>
+            We evaluate our method on several real-world tasks with Franka Research 3 Robot, we utilize a third-person camera for visual input. Three task suites are designed: (1) Simple pick-and-place task; (2) Long-horizon tasks; and (3) Generalization and observational robustness tasks.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered">
+        <img src="static/images/Nfig_5.png" width="70%" alt="Real World" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section hero is-light" id="Simulation">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Simulation</h2>
+        <div class="content has-text-justified">
+          <p>
+            Simulation experiments includes: (1) Performance comparisons on Google Robot and WidowX Robot of SimplerEnv. The experiments are conducted across 12 tasks, including both visual matching (VM) and visual aggregation (VA) settings. (2) Main results in Libero, the average success rate across 3 seeds over 500 trials per task.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered">
+        <img src="static/images/Ntable_1.png" width="70%" alt="Simulation_table" />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered">
+        <img src="static/images/Ntable_2.png" width="70%" alt="Simulation_table" />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Image carousel -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        Your image here
+        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          First image description.
+        </h2>
+      </div>
+      <div class="item">
+        Your image here
+        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Second image description.
+        </h2>
+      </div>
+      <div class="item">
+        Your image here
+        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+         Third image description.
+       </h2>
+     </div>
+     <div class="item">
+      Your image here
+      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        Fourth image description.
+      </h2>
+    </div>
+  </div>
+</div>
+</div>
+</section> -->
+<!-- End image carousel -->
+
+
+
+
+<!-- Youtube video -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      Paper video.
+      <h2 class="title is-3">Video Presentation</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <div class="publication-video">
+            Youtube embed code here
+            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End youtube video -->
+
+
+<!-- Video carousel -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Another Carousel</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            Your video file here
+            <source src="static/videos/carousel1.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            Your video file here
+            <source src="static/videos/carousel2.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\
+            Your video file here
+            <source src="static/videos/carousel3.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End video carousel -->
+
+
+
+
+
+
+<!-- Paper poster -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+
+      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+          </iframe>
+        
+      </div>
+    </div>
+  </section> -->
+<!--End paper poster -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>
+        @article{li2025cronusvla,
+          title={CronusVLA: Transferring Latent Motion Across Time for Multi-Frame Prediction in Manipulation},
+          author={Li, Hao and Yang, Shuai and Chen, Yilun and Tian, Yang and Yang, Xiaoda and Chen, Xinyi and Wang, Hanqing and Wang, Tai and Zhao, Feng and Lin, Dahua and others},
+          journal={arXiv preprint arXiv:2506.19816},
+          year={2025}
+        }
+      </code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
