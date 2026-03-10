@@ -263,17 +263,16 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Method</h2>
         <div class="content has-text-justified">
+          
           <p>
-            (a) Joint Visuomotor Pretraining: Continuous video clips are processed by a frozen 3D-VAE into temporal tokens and structurally decoupled into two streams. Visual tokens reconstruct the initial frame $O_t$, while motor tokens, supervised by action chunks, utilize the \textbf{Joint Visuomotor Gating module (c)} based on gated cross-attention, where the motor stream iteratively queries spatial affordances from the visual tokens, yielding physically grounded joint visuomotor embeddings. 
-            \textbf{(b) Joint Visuomotor Embedding Guided VLA Post-training:} The frozen model provides joint visuomotor embeddings as future-aware temporal priors. Through latent embedding alignment, the downstream VLA's intermediate representations are forced to internalize these dynamics
-            <!-- To summarize, our contributions are as follows: -->
-          <!-- <ul>
-            <li> Efficient multi-frame(temporal) modeling and inference, available in both 7B and 0.5B versions.
-            <li> Leading performance on SimplerEnv, LIBERO, and real-world Franka experiments.
-            <li> High robustness on the SimplerEnv-OR benchmark and real-world robustness tests.  
-            <li> SimplerEnv-OR, a novel benchmark for quantitative evaluation of robustness under observational disturbances, featuring 24 types of observational disturbances and 120 severity levels.         </ul> -->
+            <strong>(a) Joint Visuomotor Pretraining:</strong> Continuous video clips are processed by a frozen 3D-VAE into temporal tokens and structurally decoupled into two streams. Visual tokens reconstruct the initial frame $O_t$, while motor tokens, supervised by action chunks, utilize the <strong>Joint Visuomotor Gating module (c)</strong> based on gated cross-attention, where the motor stream iteratively queries spatial affordances from the visual tokens, yielding physically grounded joint visuomotor embeddings. 
           </p>
-        </div>
+
+          <p>
+            <strong>(b) Joint Visuomotor Embedding Guided VLA Post-training:</strong> The frozen model provides joint visuomotor embeddings as future-aware temporal priors. Through latent embedding alignment, the downstream VLA's intermediate representations are forced to internalize these dynamics.
+          </p>
+
+          </div>
       </div>
     </div>
   </div>
